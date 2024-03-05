@@ -1,0 +1,31 @@
+** ComfyUI startup time: 2024-03-05 12:18:46.545464
+[2024-03-05 12:18] ** Platform: Windows
+[2024-03-05 12:18] ** Python version: 3.11.7 (tags/v3.11.7:fa7a6f2, Dec  4 2023, 19:24:49) [MSC v.1937 64 bit (AMD64)]
+[2024-03-05 12:18] ** Python executable: C:\git\N3XUS-B0T-ComfyUI\.venv\Scripts\python.exe
+[2024-03-05 12:18] ** Log path: C:\git\N3XUS-B0T-ComfyUI\comfyui.log
+[2024-03-05 12:18] 
+Prestartup times for custom nodes:
+[2024-03-05 12:18]    0.0 seconds: C:\git\N3XUS-B0T-ComfyUI\custom_nodes\ComfyUI-Manager
+[2024-03-05 12:18] 
+Traceback (most recent call last):
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\main.py", line 76, in <module>
+[2024-03-05 12:18]     import execution
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\execution.py", line 11, in <module>
+[2024-03-05 12:18]     import nodes
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\nodes.py", line 20, in <module>
+[2024-03-05 12:18]     import comfy.diffusers_load
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\comfy\diffusers_load.py", line 3, in <module>
+[2024-03-05 12:18]     import comfy.sd
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\comfy\sd.py", line 4, in <module>
+[2024-03-05 12:18]     from comfy import model_management
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\comfy\model_management.py", line 118, in <module>
+[2024-03-05 12:18]     total_vram = get_total_memory(get_torch_device()) / (1024 * 1024)
+[2024-03-05 12:18]                                   ^^^^^^^^^^^^^^^^^^
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\comfy\model_management.py", line 87, in get_torch_device
+[2024-03-05 12:18]     return torch.device(torch.cuda.current_device())
+[2024-03-05 12:18]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\.venv\Lib\site-packages\torch\cuda\__init__.py", line 787, in current_device
+[2024-03-05 12:18]     _lazy_init()
+[2024-03-05 12:18]   File "C:\git\N3XUS-B0T-ComfyUI\.venv\Lib\site-packages\torch\cuda\__init__.py", line 293, in _lazy_init
+[2024-03-05 12:18]     raise AssertionError("Torch not compiled with CUDA enabled")
+[2024-03-05 12:18] AssertionError: Torch not compiled with CUDA enabled
